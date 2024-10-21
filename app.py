@@ -15,7 +15,7 @@ print("Starting the Flask application...")  # Add this at the top of the file
 # # Set secret key for session
 # app.secret_key = os.getenv('SECRET_KEY', 'your_default_secret_key')
 
-HUGGINGFACE_API_KEY = "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"
+HUGGINGFACE_API_KEY = "your-hugging-face-api"
 
 # Verify the Hugging Face API key exists
 if not HUGGINGFACE_API_KEY:
