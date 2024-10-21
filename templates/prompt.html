@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="prompt-container">
+        <div class="prompt-box">
+            <h2>Text to Image Converter</h2>
+            <form action="/generate_image" method="POST">
+                <input type="text" name="text_prompt" placeholder="Enter text prompt" required>
+                <button type="submit">Generate Image</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

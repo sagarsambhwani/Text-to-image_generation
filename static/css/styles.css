@@ -1,0 +1,183 @@
+/* Body background setup */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('/static/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.login-box, .register-box{
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #03a9f4;
+}
+
+.input-box input::placeholder {
+    color: #bbb;
+}
+
+.input-box label {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    font-size: 12px;
+    color: #03a9f4;
+    pointer-events: none;
+    background: white;
+    padding: 0 5px;
+    transition: 0.3s ease;
+}
+
+button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #03a9f4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0288d1;
+}
+
+button:disabled {
+    background-color: #b0bec5; /* Light grey for disabled state */
+    cursor: not-allowed;
+}
+
+#error-msg {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Flash message styling */
+.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flashes li {
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+}
+
+.danger {
+    color: red;
+}
+
+.info {
+    color: blue;
+}
+
+/* Prompt container styling */
+.prompt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.prompt-box {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+}
+
+.prompt-box h2 {
+    margin-bottom: 20px;
+    color: #03a9f4;
+}
+
+.prompt-box input {
+    width: 94%;
+    padding: 12px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.prompt-box input:focus {
+    border-color: #03a9f4;
+}
+
+.prompt-box input::placeholder {
+    color: #bbb;
+}
+
+.prompt-box button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #03a9f4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.prompt-box button:hover {
+    background-color: #0288d1;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%;
+    }
+}
