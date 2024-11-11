@@ -3,3 +3,4 @@ mysql-connector-python==8.0.33
 passlib==1.7.4
 Pillow==9.5.0
 requests==2.31.0  # Added for making API calls to Stable Diffusion
+Gunicorn
